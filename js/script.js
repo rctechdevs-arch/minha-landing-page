@@ -23,3 +23,13 @@ const observer = new IntersectionObserver((entries) => {
     })
 }, { threshold: 0.1 })
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el))
+
+// FAQ
+document.querySelectorAll('.faq-pergunta').forEach(pergunta => {
+    pergunta.addEventListener('click', () => {
+        const item = pergunta.parentElement
+        const ativo = item.classList.contains('ativo')
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('ativo'))
+        if (!ativo) item.classList.add('ativo')
+    })
+})
