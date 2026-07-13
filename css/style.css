@@ -911,6 +911,9 @@ footer {
         text-align: left;
         border: none;
     }
+    #header {
+    top: 0;
+    }
     .banner-wpp-mobile { display: none; }
     .hero-selos { justify-content: flex-start; }
     .dif-grid { grid-template-columns: repeat(4, 1fr); }
