@@ -80,7 +80,7 @@ body {
 /* HEADER */
 #header {
     position: sticky;
-    top: 44px;
+    top: 38px;
     z-index: 100;
     background: rgba(6,11,20,0.97);
     backdrop-filter: blur(12px);
