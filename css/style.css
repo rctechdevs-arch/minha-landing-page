@@ -850,6 +850,54 @@ footer {
 }
 .reveal.visivel { opacity: 1; transform: translateY(0); }
 
+/* BANNER MOBILE WPP */
+.banner-wpp-mobile {
+    display: block;
+    background: #25D366;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
+.banner-wpp-mobile a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 0.88rem;
+}
+.banner-wpp-mobile i { font-size: 1.1rem; }
+
+/* SELOS DE CONFIANÇA */
+.hero-selos {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+.hero-selos span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+.hero-selos i { color: #25D366; font-size: 0.75rem; }
+
+/* BOTÃO WPP HERO MAIOR NO MOBILE */
+.btn-wpp-hero {
+    background: #25D366 !important;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4) !important;
+    font-size: 1rem !important;
+    padding: 16px 28px !important;
+}
+.btn-wpp-hero:hover { background: #20b858 !important; }
+
 /* RESPONSIVE */
 @media (min-width: 768px) {
     .menu-toggle { display: none; }
@@ -863,6 +911,8 @@ footer {
         text-align: left;
         border: none;
     }
+    .banner-wpp-mobile { display: none; }
+    .hero-selos { justify-content: flex-start; }
     .dif-grid { grid-template-columns: repeat(4, 1fr); }
     .servicos-grid { grid-template-columns: repeat(2, 1fr); }
     .porque-grid { grid-template-columns: repeat(2, 1fr); }
