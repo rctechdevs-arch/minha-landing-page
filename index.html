@@ -6,7 +6,8 @@
     <meta name="description" content="RCTech — Sites profissionais modernos e responsivos a partir de R$ 99.">
     <title>RCTech | Soluções Web</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link rel="icon" type="image/png" href="imagem/foto-icon-transparente_1.webp">
 
     <!-- Código do Microsoft Clarity -->
@@ -35,7 +36,7 @@
     <header id="header">
         <div class="header-inner">
             <a href="#hero" class="logo">
-                <img src="imagem/foto-icon-transparente_1.webp" alt="RCTech">
+                <img src="imagem/foto-icon-transparente_1.webp" alt="RCTech" fetchpriority="high">
                 <span>RC<strong>Tech</strong></span>
             </a>
             <nav id="menu">
