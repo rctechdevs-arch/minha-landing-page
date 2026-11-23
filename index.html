@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RCTech — Sites profissionais modernos e responsivos a partir de R$ 99.">
-    <title>RCTech | Soluções Web</title>
+    <meta name="description" content="RCTech — Sites profissionais, modernos e responsivos a partir de R$ 99. Currículo online, portfólio, landing page e site institucional.">
+    <meta name="theme-color" content="#060B14">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RCTech | Sites profissionais a partir de R$ 99">
+    <meta property="og:description" content="Currículo online, portfólio, landing page e site institucional. Orçamento gratuito pelo WhatsApp.">
+    <meta property="og:image" content="imagem/landing-page-demo.webp">
+    <title>RCTech | Sites Profissionais a partir de R$ 99</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link rel="icon" type="image/png" href="imagem/foto-icon-transparente_1.webp">
+    <script>document.documentElement.classList.add('js');</script>
 
-    <!-- Código do Microsoft Clarity -->
+    <!-- Microsoft Clarity -->
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xkzi4yygee");
-</script>
+    </script>
 </head>
 <body>
 
+    <a href="#main" class="skip-link">Ir para o conteúdo</a>
     <div id="progress-bar"></div>
 
-   <!-- BANNER MOBILE WPP -->
+    <!-- BANNER MOBILE WPP -->
     <div class="banner-wpp-mobile">
-        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank">
+        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-whatsapp"></i>
-            <span>Fale agora no WhatsApp — Orçamento Grátis</span>
+            <span>Orçamento grátis no WhatsApp</span>
             <i class="fa-solid fa-arrow-right"></i>
         </a>
     </div>
@@ -36,88 +47,69 @@
     <header id="header">
         <div class="header-inner">
             <a href="#hero" class="logo">
-                <img src="imagem/foto-icon-transparente_1.webp" alt="RCTech" fetchpriority="high">
+                <img src="imagem/foto-icon-transparente_1.webp" alt="RCTech" width="44" height="44" fetchpriority="high">
                 <span>RC<strong>Tech</strong></span>
             </a>
-            <nav id="menu">
+            <nav id="menu" aria-label="Menu principal">
                 <ul>
                     <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#porque">Por que nós</a></li>
                     <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#processo">Como funciona</a></li>
                     <li><a href="#planos">Planos</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="btn-nav">Orçamento Grátis</a></li>
+                    <li><a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-nav">Orçamento grátis</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
         <!-- HERO -->
         <section id="hero">
             <div class="hero-bg"></div>
-            <div class="hero-content">
-                <div class="hero-badge">✅ Sites entregues em até 15 dias</div>
-                <h1>Seu site profissional,<br><span>do jeito certo.</span></h1>
-                <p class="hero-sub">Sites modernos e responsivos a partir de <strong>R$ 99.</strong> Currículo, portfólio, landing page e site institucional.</p>
-                <div class="hero-acoes">
-                    <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="btn-primary btn-wpp-hero">
-                        <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento Grátis
-                    </a>
-                    <a href="#projetos" class="btn-secondary">Ver Projetos</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge"><span class="dot"></span> Sites entregues em até 15 dias</div>
+                    <h1>Seu site profissional,<br><span>do jeito certo.</span></h1>
+                    <p class="hero-sub">Sites modernos, rápidos e responsivos a partir de <strong>R$ 99</strong>. Currículo, portfólio, landing page e site institucional, feitos sob medida e sem templates.</p>
+                    <div class="hero-acoes">
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-primary btn-wpp-hero">
+                            <i class="fa-brands fa-whatsapp"></i> Solicitar orçamento grátis
+                        </a>
+                        <a href="#projetos" class="btn-secondary">Ver projetos <i class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+                    <ul class="hero-selos">
+                        <li><i class="fa-solid fa-check"></i> Orçamento gratuito</li>
+                        <li><i class="fa-solid fa-check"></i> Sem compromisso</li>
+                        <li><i class="fa-solid fa-check"></i> Atendimento direto com o desenvolvedor</li>
+                    </ul>
                 </div>
-                <div class="hero-selos">
-                    <span><i class="fa-solid fa-check"></i> Orçamento gratuito</span>
-                    <span><i class="fa-solid fa-check"></i> Sem compromisso</span>
-                    <span><i class="fa-solid fa-check"></i> Atendimento personalizado</span>
-                </div>
-                <div class="hero-nums">
-                    <div class="num">
-                        <strong>100%</strong>
-                        <span>Responsivo</span>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="browser browser-hero">
+                        <div class="browser-bar">
+                            <span class="b-dots"><i></i><i></i><i></i></span>
+                            <span class="b-url"><i class="fa-solid fa-lock"></i> seusite.com.br</span>
+                        </div>
+                        <img src="imagem/landing-page-demo.webp" alt="" width="800" height="500">
                     </div>
-                    <div class="num">
-                        <strong>15 dias</strong>
-                        <span>Prazo máximo</span>
-                    </div>
-                    <div class="num">
-                        <strong>R$ 99</strong>
-                        <span>A partir de</span>
-                    </div>
+                    <div class="float-chip chip-1"><i class="fa-solid fa-mobile-screen"></i> 100% responsivo</div>
+                    <div class="float-chip chip-2"><i class="fa-solid fa-bolt"></i> Entrega rápida</div>
                 </div>
             </div>
         </section>
 
-        <!-- DIFERENCIAIS -->
-        <section id="diferenciais" class="section reveal">
-            <div class="container">
-                <div class="dif-grid">
-                    <div class="dif-item">
-                        <i class="fa-solid fa-mobile-screen"></i>
-                        <h3>100% Responsivo</h3>
-                        <p>Funciona perfeitamente em celular, tablet e computador.</p>
-                    </div>
-                    <div class="dif-item">
-                        <i class="fa-solid fa-bolt"></i>
-                        <h3>Entrega Rápida</h3>
-                        <p>Sites entregues no prazo combinado, sem enrolação.</p>
-                    </div>
-                    <div class="dif-item">
-                        <i class="fa-solid fa-headset"></i>
-                        <h3>Suporte Incluso</h3>
-                        <p>Atendimento via WhatsApp durante todo o projeto.</p>
-                    </div>
-                    <div class="dif-item">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <h3>Otimizado para Google</h3>
-                        <p>Sites desenvolvidos com boas práticas de SEO.</p>
-                    </div>
-                </div>
+        <!-- FAIXA DE CONFIANÇA -->
+        <section class="strip">
+            <div class="container strip-grid">
+                <div><strong>100%</strong><span>Responsivo</span></div>
+                <div><strong>até 15 dias</strong><span>Prazo de entrega</span></div>
+                <div><strong>R$ 99</strong><span>Preço inicial</span></div>
+                <div><strong>2 rodadas</strong><span>De ajustes inclusas</span></div>
             </div>
         </section>
 
@@ -125,59 +117,51 @@
         <section id="servicos" class="section section-dark reveal">
             <div class="container">
                 <p class="eyebrow center">O que oferecemos</p>
-                <h2 class="section-title center">Nossos Serviços</h2>
+                <h2 class="section-title center">Escolha o site ideal para você</h2>
+                <p class="section-sub center">Do currículo online ao site completo da sua empresa, tudo desenvolvido do zero.</p>
                 <div class="servicos-grid">
 
                     <article class="servico-card">
                         <div class="servico-icon"><i class="fa-solid fa-file-lines"></i></div>
                         <h3>Currículo Online</h3>
-                        <p>Destaque seu perfil profissional com uma página moderna e acessível por link.</p>
+                        <p>Destaque seu perfil profissional com uma página moderna, acessível por link.</p>
                         <ul>
                             <li><i class="fa-solid fa-check"></i> Página personalizada</li>
                             <li><i class="fa-solid fa-check"></i> Download em PDF</li>
                             <li><i class="fa-solid fa-check"></i> Links para redes sociais</li>
                             <li><i class="fa-solid fa-check"></i> Responsivo</li>
                         </ul>
-                        <div class="servico-preco">
-                            <span>A partir de</span>
-                            <strong>R$ 99</strong>
-                        </div>
-                        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Tenho%20interesse%20em%20um%20Currículo%20Online." target="_blank" class="btn-servico">Solicitar Orçamento</a>
+                        <div class="servico-preco"><span>A partir de</span><strong>R$ 99</strong></div>
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Tenho%20interesse%20em%20um%20Curr%C3%ADculo%20Online." target="_blank" rel="noopener noreferrer" class="btn-servico">Solicitar orçamento</a>
                     </article>
 
                     <article class="servico-card">
                         <div class="servico-icon"><i class="fa-solid fa-address-card"></i></div>
                         <h3>Portfólio Profissional</h3>
-                        <p>Mostre seus projetos e conquiste clientes com um portfólio moderno.</p>
+                        <p>Mostre seus projetos e conquiste clientes com um portfólio de impacto.</p>
                         <ul>
                             <li><i class="fa-solid fa-check"></i> Galeria de projetos</li>
                             <li><i class="fa-solid fa-check"></i> Integração com GitHub</li>
                             <li><i class="fa-solid fa-check"></i> Animações suaves</li>
                             <li><i class="fa-solid fa-check"></i> Responsivo</li>
                         </ul>
-                        <div class="servico-preco">
-                            <span>A partir de</span>
-                            <strong>R$ 149</strong>
-                        </div>
-                        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Tenho%20interesse%20em%20um%20Portfólio%20Profissional." target="_blank" class="btn-servico">Solicitar Orçamento</a>
+                        <div class="servico-preco"><span>A partir de</span><strong>R$ 149</strong></div>
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Tenho%20interesse%20em%20um%20Portf%C3%B3lio%20Profissional." target="_blank" rel="noopener noreferrer" class="btn-servico">Solicitar orçamento</a>
                     </article>
 
                     <article class="servico-card destaque">
-                        <div class="servico-badge">Mais Popular</div>
+                        <div class="servico-badge">Mais popular</div>
                         <div class="servico-icon"><i class="fa-solid fa-laptop-code"></i></div>
                         <h3>Landing Page</h3>
-                        <p>Página focada em conversão para divulgar seus serviços, produtos ou eventos.</p>
+                        <p>Página focada em conversão para divulgar serviços, produtos ou eventos.</p>
                         <ul>
                             <li><i class="fa-solid fa-check"></i> Foco em conversão</li>
                             <li><i class="fa-solid fa-check"></i> Botão WhatsApp</li>
                             <li><i class="fa-solid fa-check"></i> Seções personalizadas</li>
                             <li><i class="fa-solid fa-check"></i> Responsivo</li>
                         </ul>
-                        <div class="servico-preco">
-                            <span>A partir de</span>
-                            <strong>R$ 399</strong>
-                        </div>
-                        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Tenho%20interesse%20em%20uma%20Landing%20Page." target="_blank" class="btn-servico">Solicitar Orçamento</a>
+                        <div class="servico-preco"><span>A partir de</span><strong>R$ 399</strong></div>
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Tenho%20interesse%20em%20uma%20Landing%20Page." target="_blank" rel="noopener noreferrer" class="btn-servico btn-servico-destaque">Solicitar orçamento</a>
                     </article>
 
                     <article class="servico-card">
@@ -190,71 +174,9 @@
                             <li><i class="fa-solid fa-check"></i> Contato e WhatsApp</li>
                             <li><i class="fa-solid fa-check"></i> Responsivo</li>
                         </ul>
-                        <div class="servico-preco">
-                            <span>A partir de</span>
-                            <strong>R$ 699</strong>
-                        </div>
-                        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Tenho%20interesse%20em%20um%20Site%20Institucional." target="_blank" class="btn-servico">Solicitar Orçamento</a>
+                        <div class="servico-preco"><span>A partir de</span><strong>R$ 699</strong></div>
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Tenho%20interesse%20em%20um%20Site%20Institucional." target="_blank" rel="noopener noreferrer" class="btn-servico">Solicitar orçamento</a>
                     </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- POR QUE ESCOLHER -->
-        <section id="porque" class="section section-dark reveal">
-            <div class="container">
-                <p class="eyebrow center">Nossos diferenciais</p>
-                <h2 class="section-title center">Por que escolher a RCTech?</h2>
-                <div class="porque-grid">
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-user-tie"></i></div>
-                        <h3>Atendimento Personalizado</h3>
-                        <p>Você fala direto com o desenvolvedor, sem intermediários. Seu projeto recebe atenção total do início ao fim.</p>
-                    </div>
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                        <h3>Projeto Sob Medida</h3>
-                        <p>Nada de templates prontos. Cada site é desenvolvido do zero, com identidade visual pensada para o seu negócio.</p>
-                    </div>
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                        <h3>100% Responsivo</h3>
-                        <p>Todos os sites funcionam perfeitamente em celular, tablet e computador. Design adaptável garantido.</p>
-                    </div>
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-headset"></i></div>
-                        <h3>Suporte Após a Entrega</h3>
-                        <p>Não abandonamos você após a entrega. Ficamos disponíveis para dúvidas e ajustes via WhatsApp.</p>
-                    </div>
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-rocket"></i></div>
-                        <h3>Publicação e Configuração</h3>
-                        <p>Cuidamos de todo o processo de publicação e configuração inicial do seu site no ar.</p>
-                    </div>
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-comment-dollar"></i></div>
-                        <h3>Orçamento Gratuito</h3>
-                        <p>Sem compromisso. Receba seu orçamento personalizado gratuitamente e decida com calma.</p>
-                    </div>
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-clock"></i></div>
-                        <h3>Entrega no Prazo</h3>
-                        <p>Cumprimos os prazos combinados. Você sabe exatamente quando seu site vai ficar pronto.</p>
-                    </div>
-
-                    <div class="porque-item">
-                        <div class="porque-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        <h3>Otimizado para Google</h3>
-                        <p>Sites desenvolvidos com boas práticas de SEO para aparecer melhor nos resultados de busca.</p>
-                    </div>
 
                 </div>
             </div>
@@ -264,84 +186,189 @@
         <section id="projetos" class="section reveal">
             <div class="container">
                 <p class="eyebrow center">Nosso trabalho</p>
-                <h2 class="section-title center">Projetos Realizados</h2>
+                <h2 class="section-title center">Projetos de demonstração</h2>
+                <p class="section-sub center">Exemplos reais do que posso criar para você. Clique para abrir cada site ao vivo.</p>
+
                 <div class="projetos-grid">
 
                     <article class="projeto-card">
-                        <div class="projeto-img">
-                            <img src="imagem/site-institucional-demo.webp" alt="Site Institucional — Villa Noir Hotel" loading="lazy">
-                            <div class="projeto-overlay">
-                                <span>Site Institucional</span>
+                        <a href="https://rctechdevs-arch.github.io/site-intitucional-demo/" target="_blank" rel="noopener noreferrer" class="projeto-link" aria-label="Abrir demo Villa Noir Hotel">
+                            <div class="browser">
+                                <div class="browser-bar">
+                                    <span class="b-dots"><i></i><i></i><i></i></span>
+                                    <span class="b-url"><i class="fa-solid fa-lock"></i> site-institucional-demo</span>
+                                </div>
+                                <div class="browser-shot">
+                                    <img src="imagem/site-institucional-demo.webp" alt="Site Institucional — Villa Noir Hotel" loading="lazy" width="800" height="500">
+                                    <div class="projeto-overlay"><span><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site ao vivo</span></div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="projeto-info">
-                            <h3>Villa Noir Hotel</h3>
-                            <p>Site institucional de 5 páginas com dark mode sofisticado e identidade dourada.</p>
-                            <div class="projeto-rodape">
-                                <div class="projeto-tag">Site Institucional</div>
-                                <a href="https://rctechdevs-arch.github.io/site-intitucional-demo/" target="_blank" class="btn-ver-site">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site
-                                </a>
+                            <div class="projeto-top">
+                                <h3>Villa Noir Hotel</h3>
+                                <span class="projeto-tag">Site Institucional</span>
                             </div>
+                            <p>Site de 5 páginas com dark mode sofisticado e identidade dourada.</p>
+                            <ul class="projeto-chips"><li>5 páginas</li><li>Dark mode</li><li>Responsivo</li></ul>
                         </div>
                     </article>
 
                     <article class="projeto-card">
-                        <div class="projeto-img">
-                            <img src="imagem/landing-page-demo.webp" alt="Landing Page — Brasa Burger" loading="lazy">
-                            <div class="projeto-overlay">
-                                <span>Landing Page</span>
+                        <a href="https://rctechdevs-arch.github.io/landing-page-demo/" target="_blank" rel="noopener noreferrer" class="projeto-link" aria-label="Abrir demo Brasa Burger">
+                            <div class="browser">
+                                <div class="browser-bar">
+                                    <span class="b-dots"><i></i><i></i><i></i></span>
+                                    <span class="b-url"><i class="fa-solid fa-lock"></i> landing-page-demo</span>
+                                </div>
+                                <div class="browser-shot">
+                                    <img src="imagem/landing-page-demo.webp" alt="Landing Page — Brasa Burger" loading="lazy" width="800" height="500">
+                                    <div class="projeto-overlay"><span><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site ao vivo</span></div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="projeto-info">
-                            <h3>Brasa Burger</h3>
-                            <p>Landing page com cardápio interativo e CTA direto para pedido via WhatsApp.</p>
-                            <div class="projeto-rodape">
-                                <div class="projeto-tag">Landing Page</div>
-                                <a href="https://rctechdevs-arch.github.io/landing-page-demo/" target="_blank" class="btn-ver-site">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site
-                                </a>
+                            <div class="projeto-top">
+                                <h3>Brasa Burger</h3>
+                                <span class="projeto-tag">Landing Page</span>
                             </div>
+                            <p>Cardápio interativo e botão direto para pedido via WhatsApp.</p>
+                            <ul class="projeto-chips"><li>Cardápio interativo</li><li>CTA WhatsApp</li><li>Responsivo</li></ul>
                         </div>
                     </article>
 
                     <article class="projeto-card">
-                        <div class="projeto-img">
-                            <img src="imagem/portifolio-demo.webp" alt="Portfólio — Lucas Meira Fotógrafo" loading="lazy">
-                            <div class="projeto-overlay">
-                                <span>Portfólio</span>
+                        <a href="https://rctechdevs-arch.github.io/Portifolio-demo/" target="_blank" rel="noopener noreferrer" class="projeto-link" aria-label="Abrir demo Lucas Meira Fotógrafo">
+                            <div class="browser">
+                                <div class="browser-bar">
+                                    <span class="b-dots"><i></i><i></i><i></i></span>
+                                    <span class="b-url"><i class="fa-solid fa-lock"></i> portfolio-demo</span>
+                                </div>
+                                <div class="browser-shot">
+                                    <img src="imagem/portifolio-demo.webp" alt="Portfólio — Lucas Meira Fotógrafo" loading="lazy" width="800" height="500">
+                                    <div class="projeto-overlay"><span><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site ao vivo</span></div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="projeto-info">
-                            <h3>Lucas Meira Fotógrafo</h3>
-                            <p>Portfólio moderno com galeria filtrada por categoria e design gradiente.</p>
-                            <div class="projeto-rodape">
-                                <div class="projeto-tag">Portfólio</div>
-                                <a href="https://rctechdevs-arch.github.io/Portifolio-demo/" target="_blank" class="btn-ver-site">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site
-                                </a>
+                            <div class="projeto-top">
+                                <h3>Lucas Meira Fotógrafo</h3>
+                                <span class="projeto-tag">Portfólio</span>
                             </div>
+                            <p>Galeria filtrada por categoria e design com gradiente moderno.</p>
+                            <ul class="projeto-chips"><li>Galeria com filtros</li><li>Gradiente</li><li>Responsivo</li></ul>
                         </div>
                     </article>
 
                     <article class="projeto-card">
-                        <div class="projeto-img">
-                            <img src="imagem/curriculo-online-demo.webp" alt="Currículo Online — Lucas Oliveira" loading="lazy">
-                            <div class="projeto-overlay">
-                                <span>Currículo Online</span>
+                        <a href="https://rctechdevs-arch.github.io/curriculo-online-demo/" target="_blank" rel="noopener noreferrer" class="projeto-link" aria-label="Abrir demo Lucas Oliveira Dev">
+                            <div class="browser">
+                                <div class="browser-bar">
+                                    <span class="b-dots"><i></i><i></i><i></i></span>
+                                    <span class="b-url"><i class="fa-solid fa-lock"></i> curriculo-online-demo</span>
+                                </div>
+                                <div class="browser-shot">
+                                    <img src="imagem/curriculo-online-demo.webp" alt="Currículo Online — Lucas Oliveira" loading="lazy" width="800" height="500">
+                                    <div class="projeto-overlay"><span><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site ao vivo</span></div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="projeto-info">
-                            <h3>Lucas Oliveira Dev</h3>
-                            <p>Currículo online completo com download em PDF e barras de habilidades animadas.</p>
-                            <div class="projeto-rodape">
-                                <div class="projeto-tag">Currículo Online</div>
-                                <a href="https://rctechdevs-arch.github.io/curriculo-online-demo/" target="_blank" class="btn-ver-site">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver site
-                                </a>
+                            <div class="projeto-top">
+                                <h3>Lucas Oliveira Dev</h3>
+                                <span class="projeto-tag">Currículo Online</span>
                             </div>
+                            <p>Currículo completo com download em PDF e barras de habilidades animadas.</p>
+                            <ul class="projeto-chips"><li>Download em PDF</li><li>Animações</li><li>Responsivo</li></ul>
                         </div>
                     </article>
+
+                </div>
+
+                <div class="projetos-cta">
+                    <p>Quer um site assim para você?</p>
+                    <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Vi%20seus%20projetos%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Pedir meu orçamento</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section id="processo" class="section section-dark reveal">
+            <div class="container">
+                <p class="eyebrow center">Simples e sem burocracia</p>
+                <h2 class="section-title center">Como funciona</h2>
+                <ol class="processo-grid">
+                    <li class="passo">
+                        <span class="passo-num">1</span>
+                        <h3>Conversa</h3>
+                        <p>Você me chama no WhatsApp, conta sua ideia e recebe um orçamento gratuito.</p>
+                    </li>
+                    <li class="passo">
+                        <span class="passo-num">2</span>
+                        <h3>Início do projeto</h3>
+                        <p>Com o orçamento aprovado, 50% do valor inicia o desenvolvimento.</p>
+                    </li>
+                    <li class="passo">
+                        <span class="passo-num">3</span>
+                        <h3>Desenvolvimento</h3>
+                        <p>Crio o site sob medida e você acompanha e pede ajustes (até 2 rodadas inclusas).</p>
+                    </li>
+                    <li class="passo">
+                        <span class="passo-num">4</span>
+                        <h3>Entrega e publicação</h3>
+                        <p>Pagamento dos 50% finais, publicação no ar e entrega de todos os arquivos.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- POR QUE ESCOLHER -->
+        <section id="porque" class="section reveal">
+            <div class="container">
+                <p class="eyebrow center">Nossos diferenciais</p>
+                <h2 class="section-title center">Por que escolher a RCTech?</h2>
+                <div class="porque-grid">
+
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3>Atendimento personalizado</h3>
+                        <p>Você fala direto com o desenvolvedor, sem intermediários, do início ao fim.</p>
+                    </div>
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3>Projeto sob medida</h3>
+                        <p>Nada de templates prontos. Cada site é feito do zero, com identidade visual do seu negócio.</p>
+                    </div>
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3>100% responsivo</h3>
+                        <p>Funciona perfeitamente em celular, tablet e computador.</p>
+                    </div>
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-headset"></i></div>
+                        <h3>Suporte após a entrega</h3>
+                        <p>Fico disponível para dúvidas e ajustes via WhatsApp mesmo depois do site no ar.</p>
+                    </div>
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Publicação inclusa</h3>
+                        <p>Cuido de toda a configuração e publicação do seu site.</p>
+                    </div>
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-clock"></i></div>
+                        <h3>Entrega no prazo</h3>
+                        <p>Você sabe exatamente quando o site vai ficar pronto.</p>
+                    </div>
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3>Otimizado para Google</h3>
+                        <p>Boas práticas de SEO para aparecer melhor nas buscas.</p>
+                    </div>
+                    <div class="porque-item">
+                        <div class="porque-icon"><i class="fa-solid fa-comment-dollar"></i></div>
+                        <h3>Orçamento gratuito</h3>
+                        <p>Sem compromisso. Receba o orçamento e decida com calma.</p>
+                    </div>
 
                 </div>
             </div>
@@ -356,25 +383,19 @@
                 <div class="planos-grid">
                     <article class="plano-card">
                         <h3>Essencial</h3>
-                        <div class="plano-preco">
-                            <strong>R$ 47</strong>
-                            <span>/mês</span>
-                        </div>
+                        <div class="plano-preco"><strong>R$ 47</strong><span>/mês</span></div>
                         <ul>
                             <li><i class="fa-solid fa-check"></i> Até 30 min de alterações/mês</li>
                             <li><i class="fa-solid fa-check"></i> Suporte via WhatsApp</li>
                             <li><i class="fa-solid fa-check"></i> Correção de problemas</li>
                             <li><i class="fa-solid fa-check"></i> 1 backup mensal</li>
                         </ul>
-                        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Tenho%20interesse%20no%20Plano%20Cuidado%20Essencial." target="_blank" class="btn-plano">Contratar</a>
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Tenho%20interesse%20no%20Plano%20Cuidado%20Essencial." target="_blank" rel="noopener noreferrer" class="btn-plano">Contratar</a>
                     </article>
                     <article class="plano-card destaque-plano">
                         <div class="plano-badge">Recomendado</div>
                         <h3>Avançado</h3>
-                        <div class="plano-preco">
-                            <strong>R$ 87</strong>
-                            <span>/mês</span>
-                        </div>
+                        <div class="plano-preco"><strong>R$ 87</strong><span>/mês</span></div>
                         <ul>
                             <li><i class="fa-solid fa-check"></i> Até 1h de alterações/mês</li>
                             <li><i class="fa-solid fa-check"></i> Suporte via WhatsApp</li>
@@ -382,10 +403,9 @@
                             <li><i class="fa-solid fa-check"></i> 1 backup mensal</li>
                             <li><i class="fa-solid fa-check"></i> Relatório mensal do site</li>
                         </ul>
-                        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Tenho%20interesse%20no%20Plano%20Cuidado%20Avançado." target="_blank" class="btn-plano">Contratar</a>
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Tenho%20interesse%20no%20Plano%20Cuidado%20Avan%C3%A7ado." target="_blank" rel="noopener noreferrer" class="btn-plano btn-plano-destaque">Contratar</a>
                     </article>
                 </div>
-                <p class="plano-obs">* Plano Cuidado gratuito por 30 dias para clientes do Plano Premium.</p>
             </div>
         </section>
 
@@ -393,97 +413,79 @@
         <section id="faq" class="section reveal">
             <div class="container">
                 <p class="eyebrow center">Tire suas dúvidas</p>
-                <h2 class="section-title center">Perguntas Frequentes</h2>
+                <h2 class="section-title center">Perguntas frequentes</h2>
                 <div class="faq-lista">
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>A hospedagem está inclusa no valor?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>Não. A hospedagem e o domínio são contratados e pagos diretamente pelo cliente. A RCTech auxilia na escolha do melhor serviço e cuida de toda a configuração e publicação sem custo adicional.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Não. A hospedagem e o domínio são contratados e pagos diretamente pelo cliente. A RCTech auxilia na escolha do melhor serviço e cuida de toda a configuração e publicação sem custo adicional.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>Preciso comprar um domínio?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>Depende do projeto. Para portfólios e currículos, é possível usar hospedagem gratuita com link próprio. Para sites empresariais, recomendamos um domínio próprio (ex: suaempresa.com.br), que custa em média R$ 40/ano.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Depende do projeto. Para portfólios e currículos, é possível usar hospedagem gratuita com link próprio. Para sites empresariais, recomendamos um domínio próprio (ex: suaempresa.com.br), que custa em média R$ 40/ano.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>Como funciona o pagamento?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>O pagamento é dividido em duas partes: 50% para iniciar o projeto e 50% na entrega final. Aceitamos Pix e transferência bancária.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>O pagamento é dividido em duas partes: 50% para iniciar o projeto e 50% na entrega final. Aceitamos Pix e transferência bancária.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>Qual o prazo de entrega?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>O prazo varia conforme o tipo de projeto: Currículo (2 a 4 dias), Portfólio (3 a 7 dias), Landing Page (5 a 10 dias) e Site Institucional (7 a 15 dias). O prazo começa após o envio de todas as informações necessárias.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Currículo (2 a 4 dias), Portfólio (3 a 7 dias), Landing Page (5 a 10 dias) e Site Institucional (7 a 15 dias). O prazo começa após o envio de todas as informações necessárias.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>Posso pedir alterações após a entrega?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>Sim! Estão incluídas até 2 rodadas de ajustes sem custo adicional. Alterações que modifiquem o escopo original podem gerar orçamento complementar. Para suporte contínuo, temos o Plano Cuidado.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Sim! Estão incluídas até 2 rodadas de ajustes sem custo adicional. Alterações que modifiquem o escopo original podem gerar orçamento complementar. Para suporte contínuo, temos o Plano Cuidado.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>O site funciona no celular?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>Sim, todos os sites são desenvolvidos com design responsivo, funcionando perfeitamente em celulares, tablets e computadores.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Sim, todos os sites são desenvolvidos com design responsivo, funcionando perfeitamente em celulares, tablets e computadores.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>Preciso ter o conteúdo pronto antes de contratar?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>Não necessariamente. Você pode contratar e ir reunindo as informações durante o desenvolvimento. Mas quanto antes enviar textos, fotos e informações, mais rápido o projeto fica pronto.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Não necessariamente. Você pode contratar e ir reunindo as informações durante o desenvolvimento. Mas quanto antes enviar textos, fotos e informações, mais rápido o projeto fica pronto.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
+                        <button class="faq-pergunta" aria-expanded="false">
                             <span>Após a entrega o site é meu?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>Sim! Após o pagamento total o site é 100% seu. Você recebe todos os arquivos e acessos. A RCTech não mantém nenhum direito sobre o projeto entregue.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Sim! Após o pagamento total o site é 100% seu. Você recebe todos os arquivos e acessos. A RCTech não mantém nenhum direito sobre o projeto entregue.</p></div></div>
                     </div>
 
                     <div class="faq-item">
-                        <button class="faq-pergunta">
-                            <span>Vocês aparecem no Google?</span>
+                        <button class="faq-pergunta" aria-expanded="false">
+                            <span>Meu site vai aparecer no Google?</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
-                        <div class="faq-resposta">
-                            <p>Todos os sites são desenvolvidos com boas práticas de SEO básico. Para resultados avançados no Google, recomendamos investir em SEO dedicado após o lançamento do site.</p>
-                        </div>
+                        <div class="faq-resposta"><div><p>Todos os sites são desenvolvidos com boas práticas de SEO básico. Para resultados avançados no Google, recomendamos investir em SEO dedicado após o lançamento do site.</p></div></div>
                     </div>
 
                 </div>
@@ -491,13 +493,13 @@
         </section>
 
         <!-- CTA FINAL -->
-        <section id="contato" class="section reveal">
+        <section id="contato" class="section section-dark reveal">
             <div class="container">
                 <div class="cta-box">
                     <h2>Pronto para ter seu site profissional?</h2>
-                    <p>Entre em contato agora e receba um orçamento gratuito em minutos!</p>
+                    <p>Fale comigo agora e receba um orçamento gratuito, sem compromisso.</p>
                     <div class="cta-contatos">
-                        <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="btn-wpp-grande">
+                        <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-wpp-grande">
                             <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
                         </a>
                         <a href="mailto:rctech.devs@gmail.com" class="btn-email">
@@ -513,22 +515,22 @@
     <footer>
         <div class="container footer-inner">
             <div class="footer-brand">
-                <img src="imagem/foto-icon-transparente_1.webp" alt="RCTech">
+                <img src="imagem/foto-icon-transparente_1.webp" alt="RCTech" width="46" height="46" loading="lazy">
                 <div>
                     <span class="footer-logo">RC<strong>Tech</strong></span>
-                    <p>Soluções Web Profissionais</p>
+                    <p>Soluções web profissionais</p>
                 </div>
             </div>
-            <div class="footer-links">
+            <nav class="footer-links" aria-label="Links do rodapé">
                 <a href="#servicos">Serviços</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#planos">Plano Cuidado</a>
                 <a href="#contato">Contato</a>
-            </div>
+            </nav>
             <div class="footer-redes">
-                <a href="https://github.com/ricardosask2007-beep" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ricardo-rcweb/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://wa.me/5555999703213" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/ricardosask2007-beep" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ricardo-rcweb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/5555999703213" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -536,7 +538,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5555999703213?text=Olá%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="wpp-float" aria-label="WhatsApp">
+    <a href="https://wa.me/5555999703213?text=Ol%C3%A1%20Ricardo!%20Vi%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="wpp-float" aria-label="Falar no WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
